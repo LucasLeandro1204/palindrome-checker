@@ -6,4 +6,5 @@ module.exports = {
   testPathIgnorePatterns: [
     '/mocha/',
   ],
+  coverageDirectory: 'jest-coverage',
 };

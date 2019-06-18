@@ -6,8 +6,8 @@
   "author": "LucasLeandro1204 <lucasleandro1204@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "jest": "jest",
-    "mocha": "nyc --reporter=html mocha mocha/setup.js --recursive mocha"
+    "jest": "jest --coverage",
+    "mocha": "nyc --reporter=html --report-dir=mocha-coverage mocha mocha-setup.js --recursive mocha"
   },
   "devDependencies": {
     "chai": "^4.2.0",
