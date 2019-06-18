@@ -1,0 +1,11 @@
+{
+  "name": "palindrome-checker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:LucasLeandro1204/palindrome-checker.git",
+  "author": "LucasLeandro1204 <lucasleandro1204@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
+}
