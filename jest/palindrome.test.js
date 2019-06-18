@@ -15,16 +15,14 @@ describe('Palindrome', () => {
   });
 
   it('should add a new table record with correct palindrome verification when form is submited', async () => {
-    const tbody = await page.$('tbody');
     const input = await page.$('form input');
 
-    console.dir(tbody);
-
     await input.type('not a palindrome');
-    await input.press('Enter');
+    await input.press(String.fromCharCode(13));
 
-    console.dir(tbody);
-    expect(true).toBeTruthy();
+    const tds = await page.$$('tbody tr');
+
+    expect(tds).toHaveLength(1);
   });
 
   // it('should not add a new value to history if input is empty', async () => {

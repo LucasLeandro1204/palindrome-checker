@@ -3,4 +3,7 @@ module.exports = {
   collectCoverageFrom: [
     './public/**.js',
   ],
+  testPathIgnorePatterns: [
+    '/mocha/',
+  ],
 };
