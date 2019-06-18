@@ -11,7 +11,7 @@ const isPalindrome = (string) => {
 
 const createTableRow = (string, flag) => {
   const element = document.createElement('tr');
-  
+
   element.innerHTML = `<td>${string}</td><td>${flag ? 'sim' : 'não'}</td>`;
 
   return element;
